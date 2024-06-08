@@ -6,18 +6,13 @@ const fs = require("fs");
 
 
 
-const mainController = {
+const aboutMeController = {
 
     index: (req, res) => {
         
         res.render("index.ejs")
     },
 
-    mercadoliebre: (req, res) => {
-
-        res.render("mercadoliebre.ejs")
-    },
-
 }
 
-module.exports = mainController;
+module.exports = aboutMeController;

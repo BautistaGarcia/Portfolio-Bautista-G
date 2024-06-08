@@ -23,6 +23,10 @@ const mainRouter = require("./routes/mainRouter");
 app.use("/", mainRouter);
 
 
+const aboutMeRouter = require("./routes/aboutMeRouter");
+app.use("/", aboutMeRouter);
+
+
 //************************************* Listen Server *************************************\\
 const port = process.env.PORT || 3001;
 
