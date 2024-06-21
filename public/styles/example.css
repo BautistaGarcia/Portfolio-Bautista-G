@@ -142,6 +142,7 @@ aside {
     width: 25vw;
     display: flex;
     flex-direction: column;
+
     .image-presentation {
         padding: 1rem;
         width: 15vw;
@@ -163,16 +164,6 @@ aside {
     background: linear-gradient(180deg, hsla(186, 52%, 19%, 1) 50%, hsla(202, 77%, 19%, 1) 100%);
     justify-content: space-around;
     align-items: center;
-
-    .image-presentation-full-body {
-        width: 30vw;
-        filter: drop-shadow(white 0px 0px 10px);
-
-        img {
-            border-radius: 18px;
-            width: 100%;
-        }
-    }
 
     .aboutMe-text {
         height: 50vh;

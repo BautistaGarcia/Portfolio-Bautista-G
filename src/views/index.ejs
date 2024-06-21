@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/styles/layout.css" rel="stylesheet">
     <link href="/styles/index.css" rel="stylesheet">
     <link href="/styles/head.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d5c465f7b6.js" crossorigin="anonymous"></script>
@@ -13,248 +14,256 @@
 
 
 <body>
-    <aside>
-        <div class="aside-img-container pointer">
-            <img src="/img/foto-presentacion.jpg" alt="">
+    <div class="container">
+        <aside>
+            <div class="aside-img-container pointer">
+                <img src="/img/foto-presentacion.jpg" alt="">
+            </div>
+
+            <h1><strong>Bautista </strong>Garcia Oliver</h1>
+            <dd>FullStack Developer</dd>
+
+            <ul class="social-medias">
+                <li class="pointer"><a href="https://github.com/BautistaGarcia"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li class="pointer"><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li class="pointer"><a href="https://www.instagram.com/bautigo"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li class="pointer"><a href="https://www.linkedin.com/in/bautista-garcia-oliver-22571429b/"><i
+                            class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+
+            <ol class="contact-me">
+                <li><i class="fa-solid fa-phone-volume"></i> +32 465485530</li>
+                <li><i class="fa-solid fa-at"></i>bautista.garcia.oliver@gmail.
+                    com
+                </li>
+                <li><i class="fa-solid fa-location-dot"></i>Etterbeek, Bruxelles, Belgium</li>
+                <li><i class="fa-regular fa-calendar-days"></i> 03/04/2003</li>
+            </ol>
+            <a class="cv-btn" href="" download="BautistaGarciaPortfolio.jpg"> <i
+                    class="fa-solid fa-download"></i>Download
+                CV</a>
+        </aside>
+
+        <nav id="navBar-container">
+            <ol class="nav-bar">
+                <li>
+                    <a class="nav-bar-links" data-click="profile" href="#profile">
+                        <i class="fa-regular fa-id-badge"></i>
+                        Profile
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-bar-links" data-click="about-me" href="#about-me">
+                        <i class="fa-regular fa-file"></i>
+                        About me
+
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-bar-links" data-click="work" href="#work-experience">
+                        <i class="fa-solid fa-briefcase"></i>
+                        work
+
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-bar-links" data-click="contact-me" href="#contact-me">
+                        <i class="fa-regular fa-address-book"></i>
+                        contact
+
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-bar-links" data-click="skills" href="#skills">
+                        <i class="fa-regular fa-address-book"></i>
+                        skills
+
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-bar-links" data-click="all" href="#all">
+                        <i class="fa-regular fa-address-book"></i>
+                        all
+
+                    </a>
+                </li>
+            </ol>
+        </nav>
+
+        <div class="profile" id="profile">
+            <section class="about-me" id="about-me">
+                <h1>about-me</h1>
+                <hr>
+                <p> - I am delighted to introduce myself as a Junior full-stack developer eager to embark on new
+                    professional projects.
+                    I’m 21yo & Front-end enthusiast, ready to learn strategic skills and languages.
+                    <br>
+                    - My commitment to meeting deadlines and performing is complete and I approach each project with the
+                    utmost seriousness and attention to detail.
+                    <br>
+                    I firmly believe in the power of teamwork and effective communication.
+                    I'm really excited and decided about the prospect of joining a team, to improve day by day my
+                    skills.
+                </p>
+            </section>
+            <section class="work" id="work">
+                <h1>work</h1>
+                <div class="work-div-container">
+                    <ol class="work-div">
+                        <li>
+                            <i class="fa-solid fa-object-ungroup"></i>
+                        </li>
+                        <li>
+                            <span>ux/ UI Design</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam laudantium unde atque,
+                                aspernatur dicta eveniet possimus dignissimos officiis dolorem. </p>
+                        </li>
+                    </ol>
+                    <ol class="work-div">
+                        <li>
+                            <i class="fa-solid fa-object-ungroup"></i>
+                        </li>
+                        <li>
+                            <span>App Development</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis beatae rem ducimus,
+                                ipsa tempore a voluptate provident ab obcaecati sunt.</p>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section class="projects" id="projects">
+                <h1>projects</h1>
+
+                <div class="projects-div-container">
+                    <a href="">
+                        <img src="/img/mercado-liebre.jpg" alt="">
+                        <div class="project-description">
+                            <span>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quod incidunt
+                                blanditiis
+                                fuga placeat magni.
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="projects-div-container">
+                    <a href="soundbox-qyz4.onrender.com">
+                        <img src="/img/soundbox.jpg" alt="">
+                        <div class="project-description">
+                            <span>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quod incidunt
+                                blanditiis
+                                fuga placeat magni.
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="projects-div-container">
+                    <a href="">
+                        <img src="/img/foodfunnel.png" alt="">
+                        <div class="project-description">
+                            <span>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quod incidunt
+                                blanditiis
+                                fuga placeat magni.
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section class="skills" id="skills">
+                <h1>skills</h1>
+                <div class="skills-container">
+                    <span>HTML5 <div class="skill-percentage">
+                            85%
+                        </div>
+                    </span>
+                    <div class="bar">
+
+                        <div class="red percentage-remaining"></div>
+                    </div>
+                    <span>CSS3 <div class="skill-percentage">
+                            75%
+                        </div>
+                    </span>
+                    <div class="bar">
+
+                        <div class="lightBlue percentage-remaining"></div>
+                    </div>
+                    <span>JavaScript <div class="skill-percentage">
+                            60%
+                        </div>
+                    </span>
+                    <div class="bar">
+
+                        <div class="yellow percentage-remaining"></div>
+                    </div>
+                    <span>MySql <div class="skill-percentage">
+                            50%
+                        </div>
+                    </span>
+                    <div class="bar">
+
+                        <div class="blue percentage-remaining"></div>
+                    </div>
+                    <span>Sequelize <div class="skill-percentage">
+                            90%
+                        </div>
+                    </span>
+                    <div class="bar">
+
+                        <div class="purple percentage-remaining"></div>
+                    </div>
+                    <span>Postman <div class="skill-percentage">
+                            75%
+                        </div>
+                    </span>
+                    <div class="bar">
+
+                        <div class="lightRed percentage-remaining"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="contact-me" id="contact-me">
+                <h1>contact-me</h1>
+                <span>I'm open to work in a team</span>
+                <form action="">
+                    <label for="">
+                        <input type="text" name="" id="">
+                    </label>
+                    <label for="">
+                        <input type="text" name="" id="">
+                    </label>
+                    <label for="">
+                        <input type="text" name="" id="">
+                    </label>
+                    <label for="">
+                        <input type="text" name="" id="">
+                    </label>
+                    <label for="">
+                        <input type="text" name="" id="">
+                    </label>
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="submit">
+                </form>
+            </section>
+            <section class="location" id="location">
+                <h1>location</h1>
+                <div class="section-container">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit corporis unde quibusdam expedita.
+                        Aperiam, blanditiis!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit corporis unde quibusdam expedita.
+                        Aperiam, blanditiis!</p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20158.94963309082!2d4.374990276367779!3d50.83359584123621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c4b06130fe49%3A0x40099ab2f4d50b0!2s1040%20Etterbeek!5e0!3m2!1ses!2sbe!4v1715551310431!5m2!1ses!2sbe"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
         </div>
-
-        <h1><strong>Bautista </strong>Garcia Oliver</h1>
-        <dd>FullStack Developer</dd>
-
-        <ul class="social-medias">
-            <li class="pointer"><a href="https://github.com/BautistaGarcia"><i class="fa-brands fa-github"></i></a></li>
-            <li class="pointer"><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-            <li class="pointer"><a href="https://www.instagram.com/bautigo"><i class="fa-brands fa-instagram"></i></a>
-            </li>
-            <li class="pointer"><a href="https://www.linkedin.com/in/bautista-garcia-oliver-22571429b/"><i
-                        class="fa-brands fa-linkedin"></i></a></li>
-        </ul>
-
-        <ol class="contact-me">
-            <li><i class="fa-solid fa-phone-volume"></i> +32 465485530</li>
-            <li><i class="fa-solid fa-at"></i>bautista.garcia.oliver@gmail.
-                com
-            </li>
-            <li><i class="fa-solid fa-location-dot"></i>Etterbeek, Bruxelles, Belgium</li>
-            <li><i class="fa-regular fa-calendar-days"></i> 03/04/2003</li>
-        </ol>
-        <a class="cv-btn" href="" download="BautistaGarciaPortfolio.jpg"> <i class="fa-solid fa-download"></i>Download
-            CV</a>
-    </aside>
-
-    <nav id="navBar-container">
-        <ol class="nav-bar">
-            <li>
-                <a class="nav-bar-links" data-click="profile" href="#profile">
-                    <i class="fa-regular fa-id-badge"></i>
-                    Profile
-
-                </a>
-            </li>
-            <li>
-                <a class="nav-bar-links" data-click="about-me" href="#about-me">
-                    <i class="fa-regular fa-file"></i>
-                    About me
-
-                </a>
-            </li>
-            <li>
-                <a class="nav-bar-links" data-click="work" href="#work-experience">
-                    <i class="fa-solid fa-briefcase"></i>
-                    work
-
-                </a>
-            </li>
-            <li>
-                <a class="nav-bar-links" data-click="contact-me" href="#contact-me">
-                    <i class="fa-regular fa-address-book"></i>
-                    contact
-
-                </a>
-            </li>
-            <li>
-                <a class="nav-bar-links" data-click="skills" href="#skills">
-                    <i class="fa-regular fa-address-book"></i>
-                    skills
-
-                </a>
-            </li>
-            <li>
-                <a class="nav-bar-links" data-click="all" href="#all">
-                    <i class="fa-regular fa-address-book"></i>
-                    all
-
-                </a>
-            </li>
-        </ol>
-    </nav>
-
-    <div class="profile" id="profile">
-        <section class="about-me" id="about-me">
-            <h1>about-me</h1>
-            <hr>
-            <p> - I am delighted to introduce myself as a Junior full-stack developer eager to embark on new
-                professional projects.
-                I’m 21yo & Front-end enthusiast, ready to learn strategic skills and languages.
-                <br>
-                - My commitment to meeting deadlines and performing is complete and I approach each project with the
-                utmost seriousness and attention to detail.
-                <br>
-                I firmly believe in the power of teamwork and effective communication.
-                I'm really excited and decided about the prospect of joining a team, to improve day by day my skills.
-            </p>
-        </section>
-        <section class="work" id="work">
-            <h1>work</h1>
-            <div class="work-div-container">
-                <ol class="work-div">
-                    <li>
-                        <i class="fa-solid fa-object-ungroup"></i>
-                    </li>
-                    <li>
-                        <span>ux/ UI Design</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam laudantium unde atque,
-                            aspernatur dicta eveniet possimus dignissimos officiis dolorem. </p>
-                    </li>
-                </ol>
-                <ol class="work-div">
-                    <li>
-                        <i class="fa-solid fa-object-ungroup"></i>
-                    </li>
-                    <li>
-                        <span>App Development</span>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis beatae rem ducimus,
-                            ipsa tempore a voluptate provident ab obcaecati sunt.</p>
-                    </li>
-                </ol>
-            </div>
-        </section>
-        <section class="projects" id="projects">
-            <h1>projects</h1>
-
-            <div class="projects-div-container">
-                <a href="">
-                    <img src="/img/mercado-liebre.jpg" alt="">
-                    <div class="project-description">
-                        <span>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quod incidunt blanditiis
-                            fuga placeat magni.
-                        </span>
-                    </div>
-                </a>
-            </div>
-            <div class="projects-div-container">
-                <a href="soundbox-qyz4.onrender.com">
-                    <img src="/img/soundbox.jpg" alt="">
-                    <div class="project-description">
-                        <span>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quod incidunt blanditiis
-                            fuga placeat magni.
-                        </span>
-                    </div>
-                </a>
-            </div>
-            <div class="projects-div-container">
-                <a href="">
-                    <img src="/img/foodfunnel.png" alt="">
-                    <div class="project-description">
-                        <span>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quod incidunt blanditiis
-                            fuga placeat magni.
-                        </span>
-                    </div>
-                </a>
-            </div>
-        </section>
-        <section class="skills" id="skills">
-            <h1>skills</h1>
-            <div class="skills-container">
-                <span>HTML5 <div class="skill-percentage">
-                        85%
-                    </div>
-                </span>
-                <div class="bar">
-
-                    <div class="red percentage-remaining"></div>
-                </div>
-                <span>CSS3 <div class="skill-percentage">
-                        75%
-                    </div>
-                </span>
-                <div class="bar">
-
-                    <div class="lightBlue percentage-remaining"></div>
-                </div>
-                <span>JavaScript <div class="skill-percentage">
-                        60%
-                    </div>
-                </span>
-                <div class="bar">
-
-                    <div class="yellow percentage-remaining"></div>
-                </div>
-                <span>MySql <div class="skill-percentage">
-                        50%
-                    </div>
-                </span>
-                <div class="bar">
-
-                    <div class="blue percentage-remaining"></div>
-                </div>
-                <span>Sequelize <div class="skill-percentage">
-                        90%
-                    </div>
-                </span>
-                <div class="bar">
-
-                    <div class="purple percentage-remaining"></div>
-                </div>
-                <span>Postman <div class="skill-percentage">
-                        75%
-                    </div>
-                </span>
-                <div class="bar">
-
-                    <div class="lightRed percentage-remaining"></div>
-                </div>
-            </div>
-        </section>
-        <section class="contact-me" id="contact-me">
-            <h1>contact-me</h1>
-            <span>I'm open to work in a team</span>
-            <form action="">
-                <label for="">
-                    <input type="text" name="" id="">
-                </label>
-                <label for="">
-                    <input type="text" name="" id="">
-                </label>
-                <label for="">
-                    <input type="text" name="" id="">
-                </label>
-                <label for="">
-                    <input type="text" name="" id="">
-                </label>
-                <label for="">
-                    <input type="text" name="" id="">
-                </label>
-                <input type="reset" value="Reset">
-                <input type="submit" value="submit">
-            </form>
-        </section>
-        <section class="location" id="location">
-            <h1>location</h1>
-            <div class="section-container">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit corporis unde quibusdam expedita.
-                    Aperiam, blanditiis!</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit corporis unde quibusdam expedita.
-                    Aperiam, blanditiis!</p>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20158.94963309082!2d4.374990276367779!3d50.83359584123621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c4b06130fe49%3A0x40099ab2f4d50b0!2s1040%20Etterbeek!5e0!3m2!1ses!2sbe!4v1715551310431!5m2!1ses!2sbe"
-                    style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </section>
     </div>
 
     <script>
@@ -294,6 +303,8 @@
                 document.querySelectorAll(' #profile #contact-me, #profile #location').forEach(s => {
                     s.style.display = "block"
                 });
+            } else if (id === 'all') {
+                showAllSections()
             } else {
                 showSection(id); // Pass the id here
             }

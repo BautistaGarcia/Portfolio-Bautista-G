@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 35fr 65fr;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    aside {
+        position: sticky;
+    }
+}
+@media screen and (min-width: 990px) {
+
+}
