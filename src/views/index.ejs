@@ -14,6 +14,14 @@
 
 
 <body>
+    <header>
+        <nav>
+            <div class="logo-text">BauGarciaO</div>
+            <div class="nav-item"><a href="#">Home </a></div>
+            <div class="nav-item"><a href="#">Projects </a></div>
+            <div class="nav-item"><a href="#">Contact </a></div>
+        </nav>
+    </header>
     <div class="container">
         <aside>
             <div class="aside-img-container pointer">
@@ -36,18 +44,18 @@
 
             <ol class="contact-me">
                 <li><i class="fa-solid fa-phone-volume"></i> +32 465485530</li>
-                <li><i class="fa-solid fa-at"></i>bautista.garcia.oliver@gmail.
-                    com
+                <li><i class="fa-solid fa-at"></i>bautista.garcia.oliver@gmail.com
                 </li>
                 <li><i class="fa-solid fa-location-dot"></i>Etterbeek, Bruxelles, Belgium</li>
                 <li><i class="fa-regular fa-calendar-days"></i> 03/04/2003</li>
             </ol>
-            <a class="cv-btn" href="" download="BautistaGarciaPortfolio.jpg"> <i
-                    class="fa-solid fa-download"></i>Download
-                CV</a>
+            <a class="cv-btn" href="/pdf/BautistaGarciaCV.pdf" target="_blank">
+                <i class="fa-solid fa-download"></i>Download CV</a>
+            <p style="color: #d4d4d4;">&copy; 2024 Bautista Garcia Oliver</p>
+
         </aside>
 
-        <nav id="navBar-container">
+        <nav class="navBar-container" id="navBar-container">
             <ol class="nav-bar">
                 <li>
                     <a class="nav-bar-links" data-click="profile" href="#profile">
@@ -95,7 +103,8 @@
 
         <div class="profile" id="profile">
             <section class="about-me" id="about-me">
-                <h1 class="section-titles">about-me <div class="horizontal-bar"></div></h1>
+                <h1 class="section-titles">about-me <div class="horizontal-bar"></div>
+                </h1>
                 <p> - I am delighted to introduce myself as a Junior full-stack developer eager to embark on new
                     professional projects.
                     I’m 21yo & Front-end enthusiast, ready to learn strategic skills and languages.
@@ -108,9 +117,15 @@
                     skills.
                 </p>
 
+                <h1 class="section-titles">Graduate Degrees !<div class="horizontal-gray-bar"></div>
+                </h1>
                 <div class="grid-second-section">
-                    <img src="/img/titulo DigitalHouse.jpeg" alt="">
-                    <img src="/img/titulo DigitalHouse.jpeg" alt="">
+                    <div class="grid-item">
+                        <img src="/img/titulo DigitalHouse.jpeg" alt="titulo DigitalHouse de Bautista Garcia Oliver">
+                    </div>
+                    <div class="grid-item">
+                        <img src="/img/liceeFJM.jpeg" alt="titulo DigitalHouse de Bautista Garcia Oliver">
+                    </div>
                 </div>
             </section>
             <section class="work" id="work">
@@ -256,21 +271,40 @@
             </section>
             <section class="location" id="location">
                 <h1>location</h1>
-                <div class="section-container">
+                <div>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit corporis unde quibusdam expedita.
                         Aperiam, blanditiis!</p>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit corporis unde quibusdam expedita.
                         Aperiam, blanditiis!</p>
-                    <iframe
+                    <!-- <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20158.94963309082!2d4.374990276367779!3d50.83359584123621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c4b06130fe49%3A0x40099ab2f4d50b0!2s1040%20Etterbeek!5e0!3m2!1ses!2sbe!4v1715551310431!5m2!1ses!2sbe"
-                        style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        style="border:0;" allowfullscreen="1" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe> -->
                 </div>
             </section>
         </div>
     </div>
 
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
+        const text = document.querySelector(".sec-text");
+
+        const textLoad = () => {
+            setTimeout(() => {
+                text.textContent = "-FullStack Developer"
+            }, 0);
+            setTimeout(() => {
+                text.textContent = "-Italian & Argentinian"
+            }, 4000);
+            setTimeout(() => {
+                text.textContent = "-Trilingual"
+            }, 8000);//----> 1s = 1000 miliseconds
+        }
+
+        textLoad();
+        setInterval(textLoad, 12000);
+
 
         let currentState = '';
         const sections = document.querySelectorAll('#profile section');

@@ -13,7 +13,6 @@
     rgba(255, 44, 44, 0.902) 50%,
     rgb(205, 48, 145) 100%);
 
-
 }
 
 html {
@@ -25,6 +24,12 @@ ol {
     list-style: none;
 }
 
+a:link,
+a:visited,
+a:hover,
+a:active {
+	color: var(--black-color);
+}
 
 /* clases personalizadas */
 

@@ -9,11 +9,12 @@ body {
 aside {
     bottom: 0;
     display: flex;
+    height: 75vh;
     width: 90%;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
-    padding-top: 10vh;
-    padding-bottom: 2rem;
+    padding-top: 7vh;
+    padding-bottom: 0.5rem;
 
     align-self: end;
 
@@ -44,7 +45,7 @@ aside {
     }
 
     dd {
-        padding: 5px;
+        padding: 5px 10px;
         background: rgba(211, 211, 211, 0.425);
         border-radius: 50px;
         font-size: 14px;
@@ -54,15 +55,21 @@ aside {
         /* width: 85%; */
         display: flex;
         justify-content: space-around;
-        margin: 10px 0 10px 0;
+        gap: 15px;
 
         li {
-            background: rgba(211, 211, 211, 0.425);
+            background: #f3f4f5;
             padding: 5px;
             font-size: 22px;
             border-radius: 10px;
+            color: black;
+
+            &:hover {
+                background: var(--linearGradient);
+            }
 
             a {
+                padding: 5px;
                 display: flex;
                 justify-content: center;
             }
@@ -82,16 +89,18 @@ aside {
         li {
             display: flex;
             align-items: center;
+            margin: 5px;
 
             i {
                 width: 2rem;
                 display: flex;
-                background: #fff;
-                padding: 5px;
-                font-size: 18px;
-                border-radius: 5px;
+                background: #f2f3f4;
+                padding: 0.5rem;
+                font-size: 15px;
+                border-radius: 50%;
                 align-items: center;
                 justify-content: center;
+                margin-right: 10px;
             }
         }
     }
@@ -107,7 +116,7 @@ aside {
     }
 }
 
-nav {
+.navBar-container {
     
 
     .nav-bar {
