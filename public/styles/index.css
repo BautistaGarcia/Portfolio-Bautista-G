@@ -1,25 +1,22 @@
-
 body {
-    background-image: linear-gradient(180deg, #0b3954b5 0%, #0b3954d3 100%), url(/img/fondoPiola.avif);
-    background-repeat: no-repeat;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.559) 25%, transparent 100%), url(/img/fondo.png);
+    /* background-repeat: no-repeat; */
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 
 
 aside {
-    /* position: sticky; */
-    /* top: 25vh; */
     bottom: 0;
     display: flex;
-    width: auto;
+    width: 90%;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     padding-top: 10vh;
     padding-bottom: 2rem;
 
     align-self: end;
-    
+
     border-radius: 18px 18px 0 0;
     background: #fff;
     flex-direction: column;
@@ -106,20 +103,12 @@ aside {
         padding: 10px;
         border-radius: 10px;
         width: 50%;
-        background: red;
+        background: var(--linearGradient);
     }
 }
 
 nav {
-    overflow: hidden;
-    max-width: 50vw;
-    position: fixed;
-    right: 0;
-    top: 0;
-    background: #fff;
-    margin: 1rem;
-    border-radius: 24px;
-    z-index: 999;
+    
 
     .nav-bar {
         overflow-x: scroll;
@@ -138,13 +127,14 @@ nav {
                 align-items: center;
                 border-radius: 18px;
                 padding: 0.5rem;
-
+                color: #fff;
+                
                 i {
                     font-size: 35px;
                 }
 
                 &:hover {
-                    background: #ca0c0c88;
+                    background: var(--linearGradient);;
                 }
             }
         }
@@ -159,25 +149,7 @@ nav {
 
 
 .profile {
-    margin-top: 25vh;
-    grid-column: 2;
-    grid-row: 1;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
 
-
-
-    section {
-        position: relative;
-        margin: 1rem 0 1rem 0;
-        padding: 1rem;
-        border-radius: 18px;
-        background: #fff;
-
-        &:first-child {
-            margin-top: 0;
-        }
-    }
 
 
     .about-me {
@@ -210,7 +182,7 @@ nav {
             .work-div {
                 display: flex;
                 width: 50%;
-                background: red;
+                background: var(--linearGradient);
                 margin: 0.5rem;
                 padding: 0.5rem;
                 border-radius: 18px;
@@ -370,36 +342,6 @@ nav {
         display: flex;
     }
 }
-
-
-/* media queries */
-
-@media (max-width:540px) {
-    body {
-        flex-direction: column;
-    }
-
-    aside {
-        margin: 10rem auto auto auto;
-        width: 90%;
-        position: static;
-
-        .aside-img-container {
-            top: 15px;
-        }
-    }
-
-    nav {
-        position: static;
-    }
-
-    .profile {
-        padding-right: 0;
-        margin: 1rem auto;
-        width: 90%;
-        position: static;
-    }
-} 
 
 @keyframes to-width-100 {
     0% {
