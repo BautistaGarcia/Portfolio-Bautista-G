@@ -1,8 +1,8 @@
 body {
     background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.559) 25%, transparent 100%), url(/img/fondo.png);
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     background-size: cover;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
 }
 
 
@@ -117,34 +117,37 @@ aside {
 }
 
 .navBar-container {
-    
+
 
     .nav-bar {
         overflow-x: scroll;
         display: flex;
         justify-content: space-around;
         list-style: none;
+        background: var(--linearGradient);
+        ;
+        border-left: 5px solid rgb(39, 47, 199);
+        border-right: 5px solid rgb(39, 47, 199);
+        border-radius: inherit;
+
 
         li {
             padding: 8px;
 
             .nav-bar-links {
                 width: 5rem;
-                background: rgba(211, 211, 211, 0.425);
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 border-radius: 18px;
                 padding: 0.5rem;
+                letter-spacing: 3px;
                 color: #fff;
-                
-                i {
-                    font-size: 35px;
-                }
 
                 &:hover {
-                    background: var(--linearGradient);;
+                    background: rgba(211, 211, 211, 0.425);
                 }
+
             }
         }
     }
@@ -190,16 +193,38 @@ aside {
 
             .work-div {
                 display: flex;
-                width: 50%;
+                max-width: 50%;
+                max-height: 250px;
                 background: var(--linearGradient);
                 margin: 0.5rem;
                 padding: 0.5rem;
-                border-radius: 18px;
+                border-radius: 10px;
+                aspect-ratio: 1/1;
+                align-items: center;
+                justify-content: center;
+                position: relative;
 
                 li {
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
                     span {
                         color: white;
                         font-size: 18px;
+                    }
+
+                    .fa-object-ungroup {
+                        position: absolute;
+                        top: -15px;
+                        left: -15px;
+                        padding: 5px;
+                        border-radius: 10px;
+                        backdrop-filter: blur(3px);
+                        font-size : clamp(2rem, 5vw, 2.5rem);
+                        background: rgba(211, 211, 211, 0.252);
+                        box-shadow: 5px 5px 20px 0px;
                     }
 
                     p {
@@ -216,7 +241,7 @@ aside {
 
     .projects {
         position: relative;
-        display: flex;
+        display: grid;
         justify-content: center;
 
         scroll-margin-top: 125px;
@@ -224,6 +249,10 @@ aside {
         h4 {
             position: absolute;
             top: 0;
+        }
+
+        .projects-grid-container {
+            display: grid;
         }
 
         .projects-div-container {
